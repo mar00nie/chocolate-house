@@ -1,0 +1,168 @@
+doctype html
+head
+  title Home
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/bootstrap/css/bootstrap.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/themify/themify-icons.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animate/animate.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/css-hamburgers/hamburgers.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animsition/css/animsition.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/select2/select2.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/daterangepicker/daterangepicker.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/slick/slick.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/lightbox2/css/lightbox.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='css/util.css')
+  link(rel='stylesheet' type='text/css' href='css/main.css')
+  // ===============================================================================================
+  link(rel='apple-touch-icon' sizes='57x57' href='favicon/apple-icon-57x57.png')
+  link(rel='apple-touch-icon' sizes='60x60' href='favicon/apple-icon-60x60.png')
+  link(rel='apple-touch-icon' sizes='72x72' href='favicon/apple-icon-72x72.png')
+  link(rel='apple-touch-icon' sizes='76x76' href='favicon/apple-icon-76x76.png')
+  link(rel='apple-touch-icon' sizes='114x114' href='favicon/apple-icon-114x114.png')
+  link(rel='apple-touch-icon' sizes='120x120' href='favicon/apple-icon-120x120.png')
+  link(rel='apple-touch-icon' sizes='144x144' href='favicon/apple-icon-144x144.png')
+  link(rel='apple-touch-icon' sizes='152x152' href='favicon/apple-icon-152x152.png')
+  link(rel='apple-touch-icon' sizes='180x180' href='favicon/apple-icon-180x180.png')
+  link(rel='icon' type='image/png' sizes='192x192' href='favicon/android-icon-192x192.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='favicon/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='96x96' href='favicon/favicon-96x96.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='favicon/favicon-16x16.png')
+  link(rel='manifest' href='favicon/manifest.json')
+  meta(name='msapplication-TileColor' content='#ffffff')
+  meta(name='msapplication-TileImage' content='favicon/ms-icon-144x144.png')
+  meta(name='theme-color' content='#ffffff')
+  // ===============================================================================================
+script(type='text/javascript' src='vendor/jquery/jquery-3.2.1.min.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/animsition/js/animsition.min.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/bootstrap/js/popper.js' defer='defer')
+script(type='text/javascript' src='vendor/bootstrap/js/bootstrap.min.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/select2/select2.min.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/daterangepicker/moment.min.js' defer='defer')
+script(type='text/javascript' src='vendor/daterangepicker/daterangepicker.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/slick/slick.min.js' defer='defer')
+script(type='text/javascript' src='js/slick-custom.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/parallax100/parallax100.js' defer='defer')
+script(type='text/javascript').
+  $('.parallax100').parallax100();
+// ===============================================================================================
+script(type='text/javascript' src='vendor/countdowntime/countdowntime.js' defer='defer')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/lightbox2/js/lightbox.min.js' defer='defer')
+// ===============================================================================================
+script(src='js/main.js' defer='defer')
+// ===============================================================================================
+// Header
+header
+  // Header desktop
+  .wrap-menu-header.gradient1.trans-0-4
+    .container.h-full
+      .wrap_header.trans-0-3
+        // Logo
+        .logo
+          a(href='/')
+            img(src='images/icons/potts.png' alt='IMG-LOGO' data-logofixed='images/icons/potts3.png')
+        // Menu
+        .wrap_menu.p-l-45.p-l-0-xl
+          nav.menu
+            ul.main_menu
+              li
+                a(href='/') Home
+              li
+                a(href='/drinks') Drinks
+              li
+                a(href='/treats') Treats
+              li
+                a(href='/shop') Shop
+              li
+                a(href='/contact') Contact
+        // Social
+        .social.flex-w.flex-l-m.p-r-20
+          a(href='https://www.tripadvisor.com/Restaurant_Review-g186220-d12918621-Reviews-Mrs_Potts_Chocolate_House-Bristol_England.html')
+            i.fa.fa-tripadvisor(aria-hidden='true')
+          a(href='http://www.facebook.com/mrspottschocolatehouse/')
+            i.fa.fa-facebook.m-l-21(aria-hidden='true')
+          a(href='https://twitter.com/mrspottschocs')
+            i.fa.fa-twitter.m-l-21(aria-hidden='true')
+          a(href='https://www.instagram.com/mrspottschocolatehouse/')
+            i.fa.fa-instagram.m-l-21(aria-hidden='true')
+// Video
+section.section-video.parallax100(style='background-image: url(images/icons/pots2.jpg);')
+  .content-video.t-center.p-t-225.p-b-250
+    span.tit2.p-l-15.p-r-15
+      | Discover Bristol&apos;s Premier Chocolate House
+    h3.tit4.t-center.p-l-15.p-r-15.p-t-3
+      | Mrs. Potts
+    .btn-play.ab-center.size16.hov-pointer.m-l-r-auto.m-t-43.m-b-33(data-toggle='modal' data-target='#modal-video-01')
+      .flex-c-m.sizefull.bo-cir.bgwhite.color1.hov1.trans-0-4
+        i.fa.fa-play.fs-18.m-l-2(aria-hidden='true')
+footer
+  .end-footer.bg2
+    .container
+      .flex-sb-m.flex-w.p-t-22.p-b-22
+        h4.txt13.m-b-33
+          | Visit Us
+        ul.m-b-70
+          li.txt14.m-b-14
+            br
+            br
+            i.fa.fa-map-marker.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Park Street Bristol
+          li.txt14.m-b-14
+            i.fa.fa-phone.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+44 (0) .....
+          li.txt14.m-b-14
+            i.fa.fa-envelope.fs-13.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Mrs pots @email
+        // -
+        h4.txt13.m-b-32
+          | Hours
+        ul.m-b-70
+          li.txt14
+            br
+            br
+            | 09:00AM &ndash; 8:00 PM
+          li.txt14
+            | Daily
+        .p-t-5.p-b-5
+          a.fs-15.c-white(href='#')
+            i.fa.fa-instagram.m-l-18(aria-hidden='true')
+          a.fs-15.c-white(href='#')
+            i.fa.fa-tripadvisor(aria-hidden='true')
+          a.fs-15.c-white(href='#')
+            i.fa.fa-facebook.m-l-18(aria-hidden='true')
+          a.fs-15.c-white(href='#')
+            i.fa.fa-twitter.m-l-18(aria-hidden='true')
+// Back to top
+#myBtn.btn-back-to-top.bg0-hov
+  span.symbol-btn-back-to-top
+    i.fa.fa-angle-double-up(aria-hidden='true')
+// Container Selection1
+#dropDownSelect1
+// Modal Video 01
+#modal-video-01.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+  .modal-dialog(role='document' data-dismiss='modal')
+    .close-mo-video-01.trans-0-4(data-dismiss='modal' aria-label='Close') &times;
+    .wrap-video-mo-01
+      .w-full.wrap-pic-w.op-0-0
+        img(src='images/icons/pots2.jpg' alt='IMG')
+      .video-mo-01
+        iframe(width='560' height='315' src='images/icons/pots.mp4?autoplay=0')

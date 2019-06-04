@@ -1,0 +1,180 @@
+doctype html
+head
+  title Contact
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // ===============================================================================================
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/bootstrap/css/bootstrap.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/themify/themify-icons.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animate/animate.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/css-hamburgers/hamburgers.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animsition/css/animsition.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/select2/select2.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/daterangepicker/daterangepicker.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/slick/slick.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/lightbox2/css/lightbox.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='css/util.css')
+  link(rel='stylesheet' type='text/css' href='css/main.css')
+  // ===============================================================================================
+  link(rel='apple-touch-icon' sizes='57x57' href='favicon/apple-icon-57x57.png')
+  link(rel='apple-touch-icon' sizes='60x60' href='favicon/apple-icon-60x60.png')
+  link(rel='apple-touch-icon' sizes='72x72' href='favicon/apple-icon-72x72.png')
+  link(rel='apple-touch-icon' sizes='76x76' href='favicon/apple-icon-76x76.png')
+  link(rel='apple-touch-icon' sizes='114x114' href='favicon/apple-icon-114x114.png')
+  link(rel='apple-touch-icon' sizes='120x120' href='favicon/apple-icon-120x120.png')
+  link(rel='apple-touch-icon' sizes='144x144' href='favicon/apple-icon-144x144.png')
+  link(rel='apple-touch-icon' sizes='152x152' href='favicon/apple-icon-152x152.png')
+  link(rel='apple-touch-icon' sizes='180x180' href='favicon/apple-icon-180x180.png')
+  link(rel='icon' type='image/png' sizes='192x192' href='favicon/android-icon-192x192.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='favicon/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='96x96' href='favicon/favicon-96x96.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='favicon/favicon-16x16.png')
+  link(rel='manifest' href='favicon/manifest.json')
+  meta(name='msapplication-TileColor' content='#ffffff')
+  meta(name='msapplication-TileImage' content='favicon/ms-icon-144x144.png')
+  meta(name='theme-color' content='#ffffff')
+  // ===============================================================================================
+script(type='text/javascript' src='vendor/jquery/jquery-3.2.1.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/animsition/js/animsition.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/bootstrap/js/popper.js')
+script(type='text/javascript' src='vendor/bootstrap/js/bootstrap.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/select2/select2.min.js')
+// ===============================================================================================
+// ===============================================================================================
+script(type='text/javascript' src='vendor/slick/slick.min.js')
+script(type='text/javascript' src='js/slick-custom.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/parallax100/parallax100.js')
+script(type='text/javascript').
+  $('.parallax100').parallax100();
+// ===============================================================================================
+script(type='text/javascript' src='vendor/countdowntime/countdowntime.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/lightbox2/js/lightbox.min.js')
+// ===============================================================================================
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB3w0D5npAzpjncepGPE9ymlaWf9pU3MMo')
+script(src='js/map-custom.js')
+// ===============================================================================================
+script(src='js/main.js')
+// Header
+// Header
+header
+  // Header desktop
+  .wrap-menu-header.gradient1.trans-0-4
+    .container.h-full
+      .wrap_header.trans-0-3
+        // Logo
+        .logo
+          a(href='/')
+            img(src='images/icons/potts.png' alt='IMG-LOGO' data-logofixed='images/icons/potts3.png')
+        // Menu
+        .wrap_menu.p-l-45.p-l-0-xl
+          nav.menu
+            ul.main_menu
+              li
+                a(href='/') Home
+              li
+                a(href='/drinks') Drinks
+              li
+                a(href='/treats') Treats
+              li
+                a(href='/shop') Shop
+              li
+                a(href='/contact') Contact
+        // Social
+        .social.flex-w.flex-l-m.p-r-20
+          a(href='https://www.tripadvisor.com/Restaurant_Review-g186220-d12918621-Reviews-Mrs_Potts_Chocolate_House-Bristol_England.html')
+            i.fa.fa-tripadvisor(aria-hidden='true')
+          a(href='http://www.facebook.com/mrspottschocolatehouse/')
+            i.fa.fa-facebook.m-l-21(aria-hidden='true')
+          a(href='https://twitter.com/mrspottschocs')
+            i.fa.fa-twitter.m-l-21(aria-hidden='true')
+          a(href='https://www.instagram.com/mrspottschocolatehouse/')
+            i.fa.fa-instagram.m-l-21(aria-hidden='true')
+section.section-lunch.bgwhite
+  .header-lunch.parallax0.parallax100(style='background-image: url(images/treats.jpg);')
+    .bg1-overlay.t-center.p-t-170.p-b-165
+      h2.tit4.t-center
+        | Contact Us
+// Contact form
+section.section-contact.bg1-pattern.p-t-90.p-b-113
+  // Map
+  .container
+    .map.bo8.bo-rad-10.of-hidden
+      #google_map.contact-map.size37(data-map-x='51.4541378' data-map-y='-2.603568' data-pin='favicon/favicon-32x32.png' data-scrollwhell='0' data-draggable='1')
+  .container
+    h3.tit7.t-center.p-b-62.p-t-105
+      | Send us a Message
+    form.wrap-form-reservation.size22.m-l-r-auto
+      .row
+        .col-md-4
+          // Name
+          span.txt9
+            | Name
+          .wrap-inputname.size12.bo2.bo-rad-10.m-t-3.m-b-23
+            input.bo-rad-10.sizefull.txt10.p-l-20(type='text' name='name' placeholder='Name')
+        .col-md-4
+          // Email
+          span.txt9
+            | Email
+          .wrap-inputemail.size12.bo2.bo-rad-10.m-t-3.m-b-23
+            input.bo-rad-10.sizefull.txt10.p-l-20(type='text' name='email' placeholder='Email')
+        .col-md-4
+          // Phone
+          span.txt9
+            | Phone
+          .wrap-inputphone.size12.bo2.bo-rad-10.m-t-3.m-b-23
+            input.bo-rad-10.sizefull.txt10.p-l-20(type='text' name='phone' placeholder='Phone')
+        .col-12
+          // Message
+          span.txt9
+            | Message
+          textarea.bo-rad-10.size35.bo2.txt10.p-l-20.p-t-15.m-b-10.m-t-3(name='message' placeholder='Message')
+      .wrap-btn-booking.flex-c-m.m-t-13
+        // Button3
+        button.btn3.flex-c-m.size36.txt11.trans-0-4(type='submit')
+          | Submit
+footer
+  .end-footer.bg2
+    .container
+      .flex-sb-m.flex-w.p-t-22.p-b-22
+        h4.txt13.m-b-33
+          | Visit Us
+        ul.m-b-70
+          li.txt14.m-b-14
+            br
+            br
+            i.fa.fa-map-marker.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20 Park St, Bristol BS1 5JA
+          li.txt14.m-b-14
+            i.fa.fa-phone.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+44 (0) 117 929 2727
+          li.txt14.m-b-14
+            i.fa.fa-envelope.fs-13.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mrspotts@email.com
+        // -
+        h4.txt13.m-b-32
+          | Hours
+        ul.m-b-70
+          li.txt14
+            br
+            br
+            | 09:00 &ndash; 20:00
+          li.txt14
+            | Daily

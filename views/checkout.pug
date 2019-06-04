@@ -1,0 +1,165 @@
+doctype html
+head
+  title Menu
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // ===============================================================================================
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/bootstrap/css/bootstrap.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/themify/themify-icons.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animate/animate.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/css-hamburgers/hamburgers.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animsition/css/animsition.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/select2/select2.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/daterangepicker/daterangepicker.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/slick/slick.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/lightbox2/css/lightbox.min.css')
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='css/util.css')
+  link(rel='stylesheet' type='text/css' href='css/main.css')
+  link(rel='stylesheet' type='text/css' href='css/checkout.css')
+  script(src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous')
+  // ===============================================================================================
+  link(rel='apple-touch-icon' sizes='57x57' href='favicon/apple-icon-57x57.png')
+  link(rel='apple-touch-icon' sizes='60x60' href='favicon/apple-icon-60x60.png')
+  link(rel='apple-touch-icon' sizes='72x72' href='favicon/apple-icon-72x72.png')
+  link(rel='apple-touch-icon' sizes='76x76' href='favicon/apple-icon-76x76.png')
+  link(rel='apple-touch-icon' sizes='114x114' href='favicon/apple-icon-114x114.png')
+  link(rel='apple-touch-icon' sizes='120x120' href='favicon/apple-icon-120x120.png')
+  link(rel='apple-touch-icon' sizes='144x144' href='favicon/apple-icon-144x144.png')
+  link(rel='apple-touch-icon' sizes='152x152' href='favicon/apple-icon-152x152.png')
+  link(rel='apple-touch-icon' sizes='180x180' href='favicon/apple-icon-180x180.png')
+  link(rel='icon' type='image/png' sizes='192x192' href='favicon/android-icon-192x192.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='favicon/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='96x96' href='favicon/favicon-96x96.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='favicon/favicon-16x16.png')
+  link(rel='manifest' href='favicon/manifest.json')
+  meta(name='msapplication-TileColor' content='#ffffff')
+  meta(name='msapplication-TileImage' content='favicon/ms-icon-144x144.png')
+  meta(name='theme-color' content='#ffffff')
+  // ===============================================================================================
+script(type='text/javascript' src='vendor/jquery/jquery-3.2.1.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/animsition/js/animsition.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/bootstrap/js/popper.js')
+script(type='text/javascript' src='vendor/bootstrap/js/bootstrap.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/select2/select2.min.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/slick/slick.min.js')
+script(type='text/javascript' src='js/slick-custom.js')
+// ===============================================================================================
+script(type='text/javascript' src='vendor/parallax100/parallax100.js')
+script(type='text/javascript').
+  $('.parallax100').parallax100();
+// ===============================================================================================
+script(type='text/javascript' src='vendor/lightbox2/js/lightbox.min.js')
+script(src='js/checkout.js')
+// ===============================================================================================
+script(src='js/main.js')
+// Header
+header
+  // Header desktop
+  .wrap-menu-header.gradient1.trans-0-4
+    .container.h-full
+      .wrap_header.trans-0-3
+        // Logo
+        .logo
+          a(href='index.html')
+            img(src='images/icons/potts.png' alt='IMG-LOGO' data-logofixed='images/icons/potts3.png')
+        // Menu
+        .wrap_menu.p-l-45.p-l-0-xl
+          nav.menu
+            ul.main_menu
+              li
+                a(href='/') Home
+              li
+                a(href='/drinks') Drinks
+              li
+                a(href='/treats') Treats
+              li
+                a(href='/shop') Shop
+              li
+                a(href='/contact') Contact
+        // Social
+        .social.flex-w.flex-l-m.p-r-20
+          a(href='https://www.tripadvisor.com/Restaurant_Review-g186220-d12918621-Reviews-Mrs_Potts_Chocolate_House-Bristol_England.html')
+            i.fa.fa-tripadvisor(aria-hidden='true')
+          a(href='http://www.facebook.com/mrspottschocolatehouse/')
+            i.fa.fa-facebook.m-l-21(aria-hidden='true')
+          a(href='https://twitter.com/mrspottschocs')
+            i.fa.fa-twitter.m-l-21(aria-hidden='true')
+          a(href='https://www.instagram.com/mrspottschocolatehouse/')
+            i.fa.fa-instagram.m-l-21(aria-hidden='true')
+section.section-lunch.bgwhite
+  .header-lunch.parallax0.parallax100(style='background-image: url(images/coffee.jpg);')
+    .bg1-overlay.t-center.p-t-170.p-b-165
+      h2.tit4.t-center
+        | Checkout
+section.container.content-section
+  .checkout
+    .row
+      .col-50
+        br
+        br
+        label(for='fname')
+          i.fa.fa-user
+          |  Full Name
+        input#fname(type='text' name='firstname' placeholder='Ian Holyer')
+        label(for='email')
+          i.fa.fa-envelope
+          |  Email
+        input#email(type='text' name='email' placeholder='Ian@Holyer.com')
+        label(for='adr')
+          i.fa.fa-address-card-o
+          |  Address
+        input#adr(type='text' name='address' placeholder='Merchant Venturers Building')
+        label(for='city')
+          i.fa.fa-institution
+          |  City
+        input#city(type='text' name='city' placeholder='Bristol')
+        label(for='zip') Postcode
+        input#zip(type='text' name='zip' placeholder='BS8 1UB')
+    input.btn(type='submit' value='Purchase')
+footer
+  .end-footer.bg2
+    .container
+      br
+      br
+      .flex-sb-m.flex-w.p-t-22.p-b-22
+        h4.txt13.m-b-33
+          | Visit Us
+        ul.m-b-70
+          li.txt14.m-b-14
+            br
+            br
+            i.fa.fa-map-marker.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;20 Park St, Bristol BS1 5JA
+          li.txt14.m-b-14
+            i.fa.fa-phone.fs-16.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+44 (0) 117 929 2727
+          li.txt14.m-b-14
+            i.fa.fa-envelope.fs-13.dis-inline-block.size19(aria-hidden='true')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mrspotts@email.com
+        // -
+        h4.txt13.m-b-32
+          | Hours
+        ul.m-b-70
+          li.txt14
+            br
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;09:00 &ndash; 20:00
+          li.txt14
+            | Daily
