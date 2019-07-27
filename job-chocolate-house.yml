@@ -10,7 +10,7 @@ resources:
   source:
     url: https://hooks.slack.com/services/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
 
-- name: app
+- name: pipeline-app
   type: git
   source:
     uri: https://github.com/mar00nie/chocolate-house.git
