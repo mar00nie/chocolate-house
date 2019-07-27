@@ -23,10 +23,10 @@ jobs:
     - put: notify
       params:
         alert_type: started
-    - get: app
+    - get: pipeline-app
       trigger: true
     - task: pipeline-test-task
-      file: app/task-chocolate-house.yml
+      file: pipeline-app/task-chocolate-house.yml
       on_success:
         put: notify
         params:

@@ -6,7 +6,7 @@ image_resource:
   source: {repository: ubuntu}
 
 inputs:
-- name: app
+- name: pipeline-app
 
 run:
   path: sh
@@ -16,10 +16,10 @@ run:
     apt-get update -y && apt-get upgrade -y
     curl -sL https://deb.nodesource.com/setup_$12.x | sudo -E bash -
     apt-get install -y nodejs npm git curl
+    npm install -g npm@latest
     nodejs --version
     npm --version
-    npm install -g npm@latest
-    cd chocolate-house
+    cd pipeline-app
     npm install -y
     chmod +x app.js
     node ./app.js
