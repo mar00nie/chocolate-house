@@ -1,0 +1,25 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+inputs:
+- name: app
+
+run:
+  path: sh
+  args:
+  - -c
+  - |
+    apt-get update -y && apt-get upgrade -y
+    curl -sL https://deb.nodesource.com/setup_$12.x | sudo -E bash -
+    apt-get install -y nodejs npm git curl
+    nodejs --version
+    npm --version
+    npm install -g npm@latest
+    cd chocolate-house
+    npm install -y
+    chmod +x app.js
+    node ./app.js

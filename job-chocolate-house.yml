@@ -1,0 +1,37 @@
+resource_types:
+- name: slack-alert
+  type: docker-image
+  source:
+    repository: arbourd/concourse-slack-alert-resource
+
+resources:
+- name: notify
+  type: slack-alert
+  source:
+    url: https://hooks.slack.com/services/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
+
+- name: app
+  type: git
+  source:
+    uri: https://github.com/mar00nie/chocolate-house.git
+    branch: master
+
+jobs:
+  - name: job-chocolate-house
+    public: true
+    plan:
+    - put: notify
+      params:
+        alert_type: started
+    - get: app
+      trigger: true
+    - task: pipeline-test-task
+      file: app/task-chocolate-house.yml
+      on_success:
+        put: notify
+        params:
+          alert_type: success
+      on_failure:
+        put: notify
+        params:
+          alert_type: failed
